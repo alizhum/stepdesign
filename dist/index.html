@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="css/libs/normalize.css">
+    <link rel="stylesheet" href="css/libs/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/libs/fancybox.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <header id="header" class="header">
+    <div class="container">
+        <div class="header__inner">
+            <a class="logo header__logo" href="index.html">
+                <img class="logo__img header__logo-img" src="img/logo.svg" alt="">
+            </a>
+            <nav class="nav header__nav">
+                <ul class="nav__list header__nav-list">
+                    <li class="nav__item header__nav-item">
+                        <a class="nav__link header__nav-link" href="index.html">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="nav__item header__nav-item">
+                        <a class="nav__link header__nav-link" href="projects.html">
+                            Проекты
+                        </a>
+                    </li>
+                    <li class="nav__item header__nav-item">
+                        <a class="nav__link header__nav-link" href="about.html">
+                            О нас
+                        </a>
+                    </li>
+                    <li class="nav__item header__nav-item nav__item--has-children">
+                        <a class="nav__link header__nav-link" href="#">
+                            Услуги и цены
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <use href="img/icons/sprite.svg#angle-down"></use>
+                            </svg>
+                        </a>
+                        <ul class="nav__submenu header__nav-submenu" data-depth="3">
+                            <li class="nav__submenu-item header__nav-submenu-item nav__item--has-children">
+                                <a class="nav__submenu-link header__nav-submenu-link" href="#">
+                                    Дизайн квартиры
+                                    <svg viewBox="0 0 24 24" width="24" height="24">
+                                        <use href="img/icons/sprite.svg#angle-down"></use>
+                                    </svg>
+                                </a>
+                                <ul class="nav__submenu header__nav-submenu">
+                                    <li class="nav__submenu-item header__nav-submenu-item">
+                                        <a class="nav__submenu-link header__nav-submenu-link" href="#">
+                                            Квартиры студии
+                                        </a>
+                                    </li>
+                                    <li class="nav__submenu-item header__nav-submenu-item">
+                                        <a class="nav__submenu-link header__nav-submenu-link" href="#">
+                                            Однокомнатные квартиры
+                                        </a>
+                                    </li>
+                                    <li class="nav__submenu-item header__nav-submenu-item">
+                                        <a class="nav__submenu-link header__nav-submenu-link" href="#">
+                                            Двухкомнатные квартиры
+                                        </a>
+                                    </li>
+                                    <li class="nav__submenu-item header__nav-submenu-item">
+                                        <a class="nav__submenu-link header__nav-submenu-link" href="#">
+                                            Трехкомнатные квартиры
+                                        </a>
+                                    </li>
+                                    <li class="nav__submenu-item header__nav-submenu-item">
+                                        <a class="nav__submenu-link header__nav-submenu-link" href="#">
+                                            Четырехкомнатные квартиры
+                                        </a>
+                                    </li>
+                                    <li class="nav__submenu-item header__nav-submenu-item">
+                                        <a class="nav__submenu-link header__nav-submenu-link" href="#">
+                                            Апартаменты
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav__submenu-item header__nav-submenu-item">
+                                <a class="nav__submenu-link header__nav-submenu-link" href="#">
+                                    Дома и коттеджи
+                                </a>
+                            </li>
+                            <li class="nav__submenu-item header__nav-submenu-item">
+                                <a class="nav__submenu-link header__nav-submenu-link" href="#">
+                                    Дополнительные услуги
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__item header__nav-item">
+                        <a class="nav__link header__nav-link" href="#">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+                <ul class="social header__social show-md">
+                    <li class="social__item header__social-item">
+                        <a class="social__link header__social-link" href="#" target="_blank" rel="noopener noreferrer">
+                            WhatsApp
+                            <svg viewBox="0 0 15 15" width="15" height="15">
+                                <use href="img/icons/sprite.svg#whatsapp"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item header__social-item">
+                        <a class="social__link header__social-link" href="#" target="_blank" rel="noopener noreferrer">
+                            Telegram
+                            <svg viewBox="0 0 15 15" width="15" height="15">
+                                <use href="img/icons/sprite.svg#telegram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item header__social-item">
+                        <a class="social__link header__social-link" href="#" target="_blank" rel="noopener noreferrer">
+                            Instagram
+                            <svg viewBox="0 0 15 15" width="15" height="15">
+                                <use href="img/icons/sprite.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+             <a class="phone header__phone" href="tel:+7 (495) 555-10-20">
+                +7 (495) 555-10-20
+             </a>
+             <button id="nav-toggle" class="btn show-md nav-toggle">
+                <div class="nav-toggle__content">
+                    <span class="nav-toggle__item"></span>
+                    <span class="nav-toggle__item"></span>
+                    <span class="nav-toggle__item"></span>
+                </div>
+             </button>
+        </div>
+    </div>
+</header>
+    <main class="content" id="content">
+        <section class="section section--gap-top intro">
+            <div class="container">
+                <div class="section__header section__header--center intro__header">
+                    <h2 class="section__title">
+                        Переосмысление пространства со&nbsp;вкусом
+                    </h2>
+                    <div class="section__subtitle intro__subtitle">
+                        От&nbsp;Идеи до&nbsp;Реализации: Интерьеры Step Design
+                    </div>
+                </div>
+            </div>
+                <div class="intro__inner">
+                    <div class="container">
+                        <form class="form intro__form">
+                            <input type="tel" class="form__field" placeholder="+7 (___) ___-__-__">
+                            <button class="btn step-btn step-btn--brown form__submit">
+                                Рассчитать стоимость
+                            </button>
+                        </form>
+                    </div>
+                    <picture class="intro__image">
+                        <source srcset="img/hero-mobile.jpg" media="(max-width: 753px)">
+                        <img src="img/hero.jpg" alt="" loading="lazy">
+                    </picture>
+                </div>
+        </section>
+        <section class="section section--gap-top info">
+            <div class="container">
+                <div class="info__inner">
+                    <div class="info__texts">
+                        <div class="section__header">
+                            <div class="section__line">
+                                О нас
+                            </div>
+                            <h2 class="section__title">
+                                Студия дизайна интерьера
+                            </h2>
+                        </div>
+                        <div class="info__content">
+                            <p>
+                                Дизайн-студия Step Design представляет собой гармонию индивидуального подхода и&nbsp;модного стиля. Мы&nbsp;с&nbsp;вниманием к&nbsp;деталям создаем уникальные дизайнерские решения, которые соответствуют динамике современности и&nbsp;обеспечивают наших клиентов комфортом, функциональностью и&nbsp;красотой.
+                            </p>
+                            <p>
+                                Мы&nbsp;используем наш богатый опыт для того, чтобы мастерски соединять пространственные элементы, обеспечивая правильные пропорции и&nbsp;эргономичность. Каждый проект, разработанный нашей студией, является эксклюзивным и&nbsp;отражает архитектурные решения, выраженные через совершенство геометрических линий и&nbsp;многообразие используемых материалов.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="info__images">
+                        <img src="img/about-1.jpg" alt="" class="info__image">
+                        <img src="img/about-2.jpg" alt="" class="info__image">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section--gap-top projects">
+            <div class="container">
+                <div class="section__header section__header--md-center">
+                    <div class="section__line">
+                        Проекты
+                    </div>
+                    <h2 class="section__title">
+                        Позвольте Вашему дому раскрыть свою великолепность
+                    </h2>
+                </div>
+                <div class="projects__grid">
+                    <a class="project-card" href="#">
+                        <img src="img/project-1.jpg" alt="" class="project-card__image">
+                        <div class="project-card__info">
+                            <div class="project-card__title">
+                                ЖК Бизнес Бутово
+                            </div>
+                            <span class="project-card__area">
+                                60 м2
+                            </span>
+                            <div class="project-card__description">
+                                Дизайн-студия Step Design представляет собой гармонию индивидуального подхода и модного стиля. 
+                            </div>
+                        </div>
+                    </a>
+                    <a class="project-card" href="#">
+                        <img src="img/project-2.jpg" alt="" class="project-card__image">
+                        <div class="project-card__info">
+                            <div class="project-card__title">
+                                ЖК Бизнес Бутово
+                            </div>
+                            <span class="project-card__area">
+                                60 м2
+                            </span>
+                            <div class="project-card__description">
+                                Дизайн-студия Step Design представляет собой гармонию индивидуального подхода и модного стиля. 
+                            </div>
+                        </div>
+                    </a>
+                    <a class="project-card" href="#">
+                        <img src="img/project-3.jpg" alt="" class="project-card__image">
+                        <div class="project-card__info">
+                            <div class="project-card__title">
+                                ЖК Бизнес Бутово
+                            </div>
+                            <span class="project-card__area">
+                                60 м2
+                            </span>
+                            <div class="project-card__description">
+                                Дизайн-студия Step Design представляет собой гармонию индивидуального подхода и модного стиля. 
+                            </div>
+                        </div>
+                    </a>
+                    <a class="project-card" href="#">
+                        <img src="img/project-4.jpg" alt="" class="project-card__image">
+                        <div class="project-card__info">
+                            <div class="project-card__title">
+                                ЖК Бизнес Бутово
+                            </div>
+                            <span class="project-card__area">
+                                60 м2
+                            </span>
+                            <div class="project-card__description">
+                                Дизайн-студия Step Design представляет собой гармонию индивидуального подхода и модного стиля. 
+                            </div>
+                        </div>
+                    </a>
+                    <a class="project-card" href="#">
+                        <img src="img/project-5.jpg" alt="" class="project-card__image">
+                        <div class="project-card__info">
+                            <div class="project-card__title">
+                                ЖК Бизнес Бутово
+                            </div>
+                            <span class="project-card__area">
+                                60 м2
+                            </span>
+                            <div class="project-card__description">
+                                Дизайн-студия Step Design представляет собой гармонию индивидуального подхода и модного стиля. 
+                            </div>
+                        </div>
+                    </a>
+                    <a class="project-card" href="#">
+                        <img src="img/project-6.jpg" alt="" class="project-card__image">
+                        <div class="project-card__info">
+                            <div class="project-card__title">
+                                ЖК Бизнес Бутово
+                            </div>
+                            <span class="project-card__area">
+                                60 м2
+                            </span>
+                            <div class="project-card__description">
+                                Дизайн-студия Step Design представляет собой гармонию индивидуального подхода и модного стиля. 
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="projects__bottom">
+                    <a class="step-btn step-btn--brown projects__more" href="#">
+                        Смотреть все проекты
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="section section--gap-top stages">
+            <div class="container">
+                <div class="stages__content">
+                    <div class="stages__info">
+                        <div class="section__header">
+                            <div class="section__line">
+                                Этапы проекта
+                            </div>
+                            <h2 class="section__title">
+                                Каждый шаг на&nbsp;пути к&nbsp;совершенству вашего интерьера
+                            </h2>
+                        </div>
+                        <div class="stages__items">
+                            <div class="faq-item stages__item">
+                                <button class="btn faq-item__toggle">
+                                    Планировочные решения
+                                    <svg viewBox="0 0 24 24" width="24" height="24">
+                                        <use href="img/icons/sprite.svg#angle-down"></use>
+                                    </svg>
+                                </button>
+                                <div class="faq-item__content">
+                                    <p>
+                                        Оптимизируем пространство вашего дома, обеспечивая максимальную функциональность каждого квадратного метра
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="faq-item stages__item">
+                                <button class="btn faq-item__toggle">
+                                    3D Визуализация
+                                    <svg viewBox="0 0 24 24" width="24" height="24">
+                                        <use href="img/icons/sprite.svg#angle-down"></use>
+                                    </svg>
+                                </button>
+                                <div class="faq-item__content">
+                                    <p>
+                                        Оптимизируем пространство вашего дома, обеспечивая максимальную функциональность каждого квадратного метра
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="faq-item stages__item">
+                                <button class="btn faq-item__toggle">
+                                    Рабочая документация
+                                    <svg viewBox="0 0 24 24" width="24" height="24">
+                                        <use href="img/icons/sprite.svg#angle-down"></use>
+                                    </svg>
+                                </button>
+                                <div class="faq-item__content">
+                                    <p>
+                                        Оптимизируем пространство вашего дома, обеспечивая максимальную функциональность каждого квадратного метра
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="faq-item stages__item">
+                                <button class="btn faq-item__toggle">
+                                    Спецификация
+                                    <svg viewBox="0 0 24 24" width="24" height="24">
+                                        <use href="img/icons/sprite.svg#angle-down"></use>
+                                    </svg>
+                                </button>
+                                <div class="faq-item__content">
+                                    <p>
+                                        Оптимизируем пространство вашего дома, обеспечивая максимальную функциональность каждого квадратного метра
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="faq-item stages__item">
+                                <button class="btn faq-item__toggle">
+                                    Комплектация
+                                    <svg viewBox="0 0 24 24" width="24" height="24">
+                                        <use href="img/icons/sprite.svg#angle-down"></use>
+                                    </svg>
+                                </button>
+                                <div class="faq-item__content">
+                                    <p>
+                                        Оптимизируем пространство вашего дома, обеспечивая максимальную функциональность каждого квадратного метра
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="faq-item stages__item">
+                                <button class="btn faq-item__toggle">
+                                    Ремонтные работы
+                                    <svg viewBox="0 0 24 24" width="24" height="24">
+                                        <use href="img/icons/sprite.svg#angle-down"></use>
+                                    </svg>
+                                </button>
+                                <div class="faq-item__content">
+                                    <p>
+                                        Оптимизируем пространство вашего дома, обеспечивая максимальную функциональность каждого квадратного метра
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stages__thumb">
+                        <span class="square-line stages__square"></span>
+                        <span class="square-line stages__square square-line--gold"></span>
+                        <img src="img/stages.jpg" alt="" class="stages__img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section--gap discuss">
+            <div class="container">
+                <div class="discuss__content">
+                    <div class="discuss__thumb">
+                        <img src="img/discuss.jpg" alt="" class="discuss__img">
+                    </div>
+                    <div class="discuss__info">
+                        <h2 class="discuss__title">
+                            Получите удовольствие от&nbsp;ремонта вместе с&nbsp;нами
+                        </h2>
+                        <div class="discuss__description">
+                            мы&nbsp;полностью отвечаем за&nbsp;весь процесс создания и&nbsp;выполнения проекта.
+                        </div>
+                        <button class="btn step-btn step-btn--white-outline discuss__button">
+                            Обсудить проект
+                        </button>
+                    </div>
+                    <span class="square-line discuss__square"></span>
+                    <span class="square-line discuss__square square-line--gold"></span>
+                </div>
+            </div>
+        </section>
+        <section class="section section--gap-top faq">
+            <div class="container">
+                <div class="section__header">
+                    <div class="section__line">
+                        Частые вопросы
+                    </div>
+                    <h2 class="section__title">
+                        Узнайте больше
+                    </h2>
+                </div>
+                <div class="faq__items">
+                    <ul class="faq__list">
+                        <li class="faq-item faq__item">
+                            <button class="btn faq-item__toggle">
+                                Зачем нужен авторский надзор?
+                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                    <use href="img/icons/sprite.svg#angle-down"></use>
+                                </svg>
+                            </button>
+                            <div class="faq-item__content">
+                                <p>
+                                    Авторский надзор необходим, если вы хотите, чтобы ремонт был сделан качественно и грамотно; чтобы конечный результат на 100% соответствовал дизайн-проекту; вы находитесь вне объекта и вам необходим тот, кто будет контролировать все процессы ремонта, строительства и отделки.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="faq-item faq__item">
+                            <button class="btn faq-item__toggle">
+                                Для чего нужна комплектация объекта?
+                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                    <use href="img/icons/sprite.svg#angle-down"></use>
+                                </svg>
+                            </button>
+                            <div class="faq-item__content">
+                                <p>
+                                    Авторский надзор необходим, если вы хотите, чтобы ремонт был сделан качественно и грамотно; чтобы конечный результат на 100% соответствовал дизайн-проекту; вы находитесь вне объекта и вам необходим тот, кто будет контролировать все процессы ремонта, строительства и отделки.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="faq-item faq__item">
+                            <button class="btn faq-item__toggle">
+                                Учитываете&nbsp;ли вы&nbsp;финансовые возможности заказчика?
+                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                    <use href="img/icons/sprite.svg#angle-down"></use>
+                                </svg>
+                            </button>
+                            <div class="faq-item__content">
+                                <p>
+                                    Авторский надзор необходим, если вы хотите, чтобы ремонт был сделан качественно и грамотно; чтобы конечный результат на 100% соответствовал дизайн-проекту; вы находитесь вне объекта и вам необходим тот, кто будет контролировать все процессы ремонта, строительства и отделки.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="faq-item faq__item">
+                            <button class="btn faq-item__toggle">
+                                Есть&nbsp;ли у&nbsp;вас проверенные строительные бригады, которым можно доверять? И&nbsp;работаете&nbsp;ли вы&nbsp;с&nbsp;бригадой заказчика?
+                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                    <use href="img/icons/sprite.svg#angle-down"></use>
+                                </svg>
+                            </button>
+                            <div class="faq-item__content">
+                                <p>
+                                    Авторский надзор необходим, если вы хотите, чтобы ремонт был сделан качественно и грамотно; чтобы конечный результат на 100% соответствовал дизайн-проекту; вы находитесь вне объекта и вам необходим тот, кто будет контролировать все процессы ремонта, строительства и отделки.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="faq-item faq__item">
+                            <button class="btn faq-item__toggle">
+                                Можно&nbsp;ли начать ремонт параллельно с&nbsp;разработкой дизайн-проекта?
+                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                    <use href="img/icons/sprite.svg#angle-down"></use>
+                                </svg>
+                            </button>
+                            <div class="faq-item__content">
+                                <p>
+                                    Авторский надзор необходим, если вы хотите, чтобы ремонт был сделан качественно и грамотно; чтобы конечный результат на 100% соответствовал дизайн-проекту; вы находитесь вне объекта и вам необходим тот, кто будет контролировать все процессы ремонта, строительства и отделки.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="faq-item faq__item">
+                            <button class="btn faq-item__toggle">
+                                Если еще не&nbsp;получили ключи от&nbsp;квартиры, можно&nbsp;ли начать работу над проектом?
+                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                    <use href="img/icons/sprite.svg#angle-down"></use>
+                                </svg>
+                            </button>
+                            <div class="faq-item__content">
+                                <p>
+                                    Авторский надзор необходим, если вы хотите, чтобы ремонт был сделан качественно и грамотно; чтобы конечный результат на 100% соответствовал дизайн-проекту; вы находитесь вне объекта и вам необходим тот, кто будет контролировать все процессы ремонта, строительства и отделки.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="faq__list">
+                        <li class="faq-item faq__item">
+                            <button class="btn faq-item__toggle">
+                                В&nbsp;каких стилях вы&nbsp;работаете?
+                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                    <use href="img/icons/sprite.svg#angle-down"></use>
+                                </svg>
+                            </button>
+                            <div class="faq-item__content">
+                                <p>
+                                    Авторский надзор необходим, если вы хотите, чтобы ремонт был сделан качественно и грамотно; чтобы конечный результат на 100% соответствовал дизайн-проекту; вы находитесь вне объекта и вам необходим тот, кто будет контролировать все процессы ремонта, строительства и отделки.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="faq-item faq__item">
+                            <button class="btn faq-item__toggle">
+                                Сколько вариантов планировок вы&nbsp;делаете?
+                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                    <use href="img/icons/sprite.svg#angle-down"></use>
+                                </svg>
+                            </button>
+                            <div class="faq-item__content">
+                                <p>
+                                    Авторский надзор необходим, если вы хотите, чтобы ремонт был сделан качественно и грамотно; чтобы конечный результат на 100% соответствовал дизайн-проекту; вы находитесь вне объекта и вам необходим тот, кто будет контролировать все процессы ремонта, строительства и отделки.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="faq-item faq__item">
+                            <button class="btn faq-item__toggle">
+                                Успеете&nbsp;ли вы&nbsp;создать полный проект за&nbsp;1&nbsp;месяц?
+                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                    <use href="img/icons/sprite.svg#angle-down"></use>
+                                </svg>
+                            </button>
+                            <div class="faq-item__content">
+                                <p>
+                                    Авторский надзор необходим, если вы хотите, чтобы ремонт был сделан качественно и грамотно; чтобы конечный результат на 100% соответствовал дизайн-проекту; вы находитесь вне объекта и вам необходим тот, кто будет контролировать все процессы ремонта, строительства и отделки.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="faq-item faq__item">
+                            <button class="btn faq-item__toggle">
+                                Входят&nbsp;ли в&nbsp;состав рабочей документации инженерные проекты?
+                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                    <use href="img/icons/sprite.svg#angle-down"></use>
+                                </svg>
+                            </button>
+                            <div class="faq-item__content">
+                                <p>
+                                    Авторский надзор необходим, если вы хотите, чтобы ремонт был сделан качественно и грамотно; чтобы конечный результат на 100% соответствовал дизайн-проекту; вы находитесь вне объекта и вам необходим тот, кто будет контролировать все процессы ремонта, строительства и отделки.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="faq-item faq__item">
+                            <button class="btn faq-item__toggle">
+                                Оказываете&nbsp;ли вы&nbsp;услуги дистанционно? И&nbsp;если&nbsp;да, то&nbsp;как в&nbsp;таком случае обеспечивается авторский надзор?
+                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                    <use href="img/icons/sprite.svg#angle-down"></use>
+                                </svg>
+                            </button>
+                            <div class="faq-item__content">
+                                <p>
+                                    Авторский надзор необходим, если вы хотите, чтобы ремонт был сделан качественно и грамотно; чтобы конечный результат на 100% соответствовал дизайн-проекту; вы находитесь вне объекта и вам необходим тот, кто будет контролировать все процессы ремонта, строительства и отделки.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="faq-item faq__item">
+                            <button class="btn faq-item__toggle">
+                                Нужен дизайн только одной комнаты, вы&nbsp;оказываете такую услугу?
+                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                    <use href="img/icons/sprite.svg#angle-down"></use>
+                                </svg>
+                            </button>
+                            <div class="faq-item__content">
+                                <p>
+                                    Авторский надзор необходим, если вы хотите, чтобы ремонт был сделан качественно и грамотно; чтобы конечный результат на 100% соответствовал дизайн-проекту; вы находитесь вне объекта и вам необходим тот, кто будет контролировать все процессы ремонта, строительства и отделки.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <footer id="footer" class="footer section--gap-top">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__top">
+                <div class="logo footer__logo">
+                    <img class="logo__img footer__logo-img" src="img/logo.svg" alt="">
+                    <div class="footer__logo-title">
+                        Переосмысление пространства со вкусом
+                    </div>
+                </div>
+                <div class="footer__calculate">
+                    <div class="footer__calculate-title">
+                        Закажите обратный звонок, и&nbsp;мы&nbsp;Вам перезвоним
+                    </div>
+                    <form class="form footer__calculate-form">
+                        <input type="tel" class="form__field" placeholder="+7 (___) ___-__-__">
+                        <button class="btn step-btn step-btn--brown form__submit">
+                            Рассчитать стоимость
+                        </button>
+                    </form>
+                </div>
+                <div class="footer__contacts">
+                    <a href="tel:+7 (495) 555-10-20" class="phone footer__phone">
+                        +7 (495) 555-10-20
+                    </a>
+                    <ul class="social footer__social">
+                        <li class="social__item footer__social-item">
+                            <a class="social__link footer__social-link" href="#" target="_blank" rel="noopener noreferrer">
+                                WhatsApp
+                                <svg viewBox="0 0 15 15" width="15" height="15">
+                                    <use href="img/icons/sprite.svg#whatsapp"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item footer__social-item">
+                            <a class="social__link footer__social-link" href="#" target="_blank" rel="noopener noreferrer">
+                                Telegram
+                                <svg viewBox="0 0 15 15" width="15" height="15">
+                                    <use href="img/icons/sprite.svg#telegram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item footer__social-item">
+                            <a class="social__link footer__social-link" href="#" target="_blank" rel="noopener noreferrer">
+                                Instagram
+                                <svg viewBox="0 0 15 15" width="15" height="15">
+                                    <use href="img/icons/sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <nav class="nav footer__nav">
+                    <ul class="nav__list footer__nav-list">
+                        <li class="nav__item footer__nav-item">
+                            <a class="nav__link footer__nav-link" href="#">
+                                Проекты
+                            </a>
+                        </li>
+                        <li class="nav__item footer__nav-item">
+                            <a class="nav__link footer__nav-link" href="#">
+                                О нас
+                            </a>
+                        </li>
+                        <li class="nav__item footer__nav-item">
+                            <a class="nav__link footer__nav-link" href="#">
+                                Услуги и цены
+                            </a>
+                        </li>
+                        <li class="nav__item footer__nav-item">
+                            <a class="nav__link footer__nav-link" href="#">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer__copyright">
+                    2024. Все права защищены.
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/libs/swiper-bundle.min.js"></script>
+<script src="js/libs/fancybox.umd.js"></script>
+<script src="js/libs/imask.min.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+</html>

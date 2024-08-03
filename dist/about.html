@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проекты</title>
+    <link rel="stylesheet" href="css/libs/normalize.css">
+    <link rel="stylesheet" href="css/libs/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/libs/fancybox.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <header id="header" class="header">
+    <div class="container">
+        <div class="header__inner">
+            <a class="logo header__logo" href="index.html">
+                <img class="logo__img header__logo-img" src="img/logo.svg" alt="">
+            </a>
+            <nav class="nav header__nav">
+                <ul class="nav__list header__nav-list">
+                    <li class="nav__item header__nav-item">
+                        <a class="nav__link header__nav-link" href="index.html">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="nav__item header__nav-item">
+                        <a class="nav__link header__nav-link" href="projects.html">
+                            Проекты
+                        </a>
+                    </li>
+                    <li class="nav__item header__nav-item">
+                        <a class="nav__link header__nav-link" href="about.html">
+                            О нас
+                        </a>
+                    </li>
+                    <li class="nav__item header__nav-item nav__item--has-children">
+                        <a class="nav__link header__nav-link" href="#">
+                            Услуги и цены
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <use href="img/icons/sprite.svg#angle-down"></use>
+                            </svg>
+                        </a>
+                        <ul class="nav__submenu header__nav-submenu" data-depth="3">
+                            <li class="nav__submenu-item header__nav-submenu-item nav__item--has-children">
+                                <a class="nav__submenu-link header__nav-submenu-link" href="#">
+                                    Дизайн квартиры
+                                    <svg viewBox="0 0 24 24" width="24" height="24">
+                                        <use href="img/icons/sprite.svg#angle-down"></use>
+                                    </svg>
+                                </a>
+                                <ul class="nav__submenu header__nav-submenu">
+                                    <li class="nav__submenu-item header__nav-submenu-item">
+                                        <a class="nav__submenu-link header__nav-submenu-link" href="#">
+                                            Квартиры студии
+                                        </a>
+                                    </li>
+                                    <li class="nav__submenu-item header__nav-submenu-item">
+                                        <a class="nav__submenu-link header__nav-submenu-link" href="#">
+                                            Однокомнатные квартиры
+                                        </a>
+                                    </li>
+                                    <li class="nav__submenu-item header__nav-submenu-item">
+                                        <a class="nav__submenu-link header__nav-submenu-link" href="#">
+                                            Двухкомнатные квартиры
+                                        </a>
+                                    </li>
+                                    <li class="nav__submenu-item header__nav-submenu-item">
+                                        <a class="nav__submenu-link header__nav-submenu-link" href="#">
+                                            Трехкомнатные квартиры
+                                        </a>
+                                    </li>
+                                    <li class="nav__submenu-item header__nav-submenu-item">
+                                        <a class="nav__submenu-link header__nav-submenu-link" href="#">
+                                            Четырехкомнатные квартиры
+                                        </a>
+                                    </li>
+                                    <li class="nav__submenu-item header__nav-submenu-item">
+                                        <a class="nav__submenu-link header__nav-submenu-link" href="#">
+                                            Апартаменты
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav__submenu-item header__nav-submenu-item">
+                                <a class="nav__submenu-link header__nav-submenu-link" href="#">
+                                    Дома и коттеджи
+                                </a>
+                            </li>
+                            <li class="nav__submenu-item header__nav-submenu-item">
+                                <a class="nav__submenu-link header__nav-submenu-link" href="#">
+                                    Дополнительные услуги
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__item header__nav-item">
+                        <a class="nav__link header__nav-link" href="#">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+                <ul class="social header__social show-md">
+                    <li class="social__item header__social-item">
+                        <a class="social__link header__social-link" href="#" target="_blank" rel="noopener noreferrer">
+                            WhatsApp
+                            <svg viewBox="0 0 15 15" width="15" height="15">
+                                <use href="img/icons/sprite.svg#whatsapp"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item header__social-item">
+                        <a class="social__link header__social-link" href="#" target="_blank" rel="noopener noreferrer">
+                            Telegram
+                            <svg viewBox="0 0 15 15" width="15" height="15">
+                                <use href="img/icons/sprite.svg#telegram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item header__social-item">
+                        <a class="social__link header__social-link" href="#" target="_blank" rel="noopener noreferrer">
+                            Instagram
+                            <svg viewBox="0 0 15 15" width="15" height="15">
+                                <use href="img/icons/sprite.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+             <a class="phone header__phone" href="tel:+7 (495) 555-10-20">
+                +7 (495) 555-10-20
+             </a>
+             <button id="nav-toggle" class="btn show-md nav-toggle">
+                <div class="nav-toggle__content">
+                    <span class="nav-toggle__item"></span>
+                    <span class="nav-toggle__item"></span>
+                    <span class="nav-toggle__item"></span>
+                </div>
+             </button>
+        </div>
+    </div>
+</header>
+    <main class="content" id="content">
+        <div class="page page--gap">
+            <div class="container">
+                <div class="breadcrumbs">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a href="index.html" class="breadcrumbs__link">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span class="breadcrumbs__link">
+                                О нас
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="about">
+                <section class="section about__hero">
+                    <div class="container">
+                        <div class="section__header section__header--center">
+                            <div class="section__line section__line--double">
+                                О нас
+                            </div>
+                            <h1 class="section__title section__title--short">
+                                Дизайн-студия STEP DISIGN объединяет
+                                талантливых дизайнеров, архитекторов
+                                и&nbsp;профессионалов в&nbsp;области комплектации
+                                для реализации уникальных проектов.
+                            </h1>
+                        </div>
+                        <div class="about__hero-content">
+                            <div class="about__hero-description">
+                                <p>
+                                    Мы&nbsp;уделяем первостепенное внимание культивированию уникальности, ведь без этого невозможно создать интерьер, который&nbsp;бы стал естественным продолжением его хозяина. Такие интерьеры&nbsp;&mdash; это будущее дизайна.
+                                </p>
+                            </div>
+                            <div class="about__hero-features">
+                                <div class="about__hero-feature">
+                                    <span class="about__hero-feature-number">
+                                        1
+                                    </span>
+                                    <div class="about__hero-feature-description">
+                                        Команда STEP DISIGN&nbsp;&mdash; это синергия мастеров своего ремесла, цель которых&nbsp;&mdash; создание интерьеров с&nbsp;индивидуальностью. Мы&nbsp;предоставляем полный спектр услуг по&nbsp;разработке и&nbsp;воплощению дизайн-проектов в&nbsp;жизнь.
+                                    </div>
+                                </div>
+                                <div class="about__hero-feature">
+                                    <span class="about__hero-feature-number">
+                                        2
+                                    </span>
+                                    <div class="about__hero-feature-description">
+                                        Наше портфолио насчитывает более 250 успешно реализованных проектов по&nbsp;всей стране и&nbsp;10&nbsp;дизайнеров, каждый из&nbsp;которых обладает своим уникальным стилем.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section section--gap-top info">
+                    <div class="container">
+                        <div class="info__inner">
+                            <div class="info__texts">
+                                <div class="section__header">
+                                    <div class="section__line">
+                                        Дизайн
+                                    </div>
+                                    <h2 class="section__title section__title--small">
+                                        Мы оживляем интерьеры, отражающие уникальную индивидуальность наших заказчиков.
+                                    </h2>
+                                </div>
+                                <div class="info__content">
+                                    <p>
+                                        Мы&nbsp;&mdash; команда, которую влекут сложные вызовы и&nbsp;увлекают уникальные проекты. В&nbsp;STEP DISIGN собрались ведущие дизайнеры, каждый с&nbsp;собственным стилем и&nbsp;характером.
+                                    </p>
+                                    <p>
+                                        Для вас мы&nbsp;разрабатываем комплексный проект, проработанный в&nbsp;каждой детали. От&nbsp;планировки до&nbsp;визуализации, от&nbsp;детальных чертежей до&nbsp;полной спецификации каждой детали.
+                                    </p>
+                                    <p>
+                                        Тщательно спланированный дизайн-проект до&nbsp;последнего сантиметра&nbsp;&mdash; ваш ключ к&nbsp;успешному строительству.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="info__images">
+                                <img src="img/about-3.jpg" alt="" class="info__image">
+                                <img src="img/about-4.jpg" alt="" class="info__image">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section section--gap-top info info--reverse">
+                    <div class="container">
+                        <div class="info__inner">
+                            <div class="info__texts">
+                                <div class="section__header">
+                                    <div class="section__line">
+                                        Комплектация
+                                    </div>
+                                    <h2 class="section__title section__title--small">
+                                        Мы&nbsp;сотрудничаем с&nbsp;более чем 300 фабриками-партнерами, расположенными по&nbsp;всей планете.
+                                    </h2>
+                                </div>
+                                <div class="info__content">
+                                    <p>
+                                        Наши уникальные связи с&nbsp;ведущими фабриками по&nbsp;всему миру предоставляют клиентам привилегированные предложения. Экспертиза нашего отдела комплектации является ключевым фактором успеха студии STEP DISIGN.
+                                    </p>
+                                    <p>
+                                        Мы&nbsp;обладаем глубокими знаниями о&nbsp;глобальном рынке мебели и&nbsp;отделочных материалов, что позволяет нам реализовывать дизайнерские проекты безупречно.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="info__images">
+                                <img src="img/about-3.jpg" alt="" class="info__image">
+                                <img src="img/about-4.jpg" alt="" class="info__image">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer id="footer" class="footer section--gap-top">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__top">
+                <div class="logo footer__logo">
+                    <img class="logo__img footer__logo-img" src="img/logo.svg" alt="">
+                    <div class="footer__logo-title">
+                        Переосмысление пространства со вкусом
+                    </div>
+                </div>
+                <div class="footer__calculate">
+                    <div class="footer__calculate-title">
+                        Закажите обратный звонок, и&nbsp;мы&nbsp;Вам перезвоним
+                    </div>
+                    <form class="form footer__calculate-form">
+                        <input type="tel" class="form__field" placeholder="+7 (___) ___-__-__">
+                        <button class="btn step-btn step-btn--brown form__submit">
+                            Рассчитать стоимость
+                        </button>
+                    </form>
+                </div>
+                <div class="footer__contacts">
+                    <a href="tel:+7 (495) 555-10-20" class="phone footer__phone">
+                        +7 (495) 555-10-20
+                    </a>
+                    <ul class="social footer__social">
+                        <li class="social__item footer__social-item">
+                            <a class="social__link footer__social-link" href="#" target="_blank" rel="noopener noreferrer">
+                                WhatsApp
+                                <svg viewBox="0 0 15 15" width="15" height="15">
+                                    <use href="img/icons/sprite.svg#whatsapp"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item footer__social-item">
+                            <a class="social__link footer__social-link" href="#" target="_blank" rel="noopener noreferrer">
+                                Telegram
+                                <svg viewBox="0 0 15 15" width="15" height="15">
+                                    <use href="img/icons/sprite.svg#telegram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item footer__social-item">
+                            <a class="social__link footer__social-link" href="#" target="_blank" rel="noopener noreferrer">
+                                Instagram
+                                <svg viewBox="0 0 15 15" width="15" height="15">
+                                    <use href="img/icons/sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <nav class="nav footer__nav">
+                    <ul class="nav__list footer__nav-list">
+                        <li class="nav__item footer__nav-item">
+                            <a class="nav__link footer__nav-link" href="#">
+                                Проекты
+                            </a>
+                        </li>
+                        <li class="nav__item footer__nav-item">
+                            <a class="nav__link footer__nav-link" href="#">
+                                О нас
+                            </a>
+                        </li>
+                        <li class="nav__item footer__nav-item">
+                            <a class="nav__link footer__nav-link" href="#">
+                                Услуги и цены
+                            </a>
+                        </li>
+                        <li class="nav__item footer__nav-item">
+                            <a class="nav__link footer__nav-link" href="#">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer__copyright">
+                    2024. Все права защищены.
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/libs/swiper-bundle.min.js"></script>
+<script src="js/libs/fancybox.umd.js"></script>
+<script src="js/libs/imask.min.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+</html>

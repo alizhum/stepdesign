@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проекты</title>
+    <link rel="stylesheet" href="css/libs/normalize.css">
+    <link rel="stylesheet" href="css/libs/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/libs/fancybox.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <header id="header" class="header">
+    <div class="container">
+        <div class="header__inner">
+            <a class="logo header__logo" href="index.html">
+                <img class="logo__img header__logo-img" src="img/logo.svg" alt="">
+            </a>
+            <nav class="nav header__nav">
+                <ul class="nav__list header__nav-list">
+                    <li class="nav__item header__nav-item">
+                        <a class="nav__link header__nav-link" href="index.html">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="nav__item header__nav-item">
+                        <a class="nav__link header__nav-link" href="projects.html">
+                            Проекты
+                        </a>
+                    </li>
+                    <li class="nav__item header__nav-item">
+                        <a class="nav__link header__nav-link" href="about.html">
+                            О нас
+                        </a>
+                    </li>
+                    <li class="nav__item header__nav-item nav__item--has-children">
+                        <a class="nav__link header__nav-link" href="#">
+                            Услуги и цены
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <use href="img/icons/sprite.svg#angle-down"></use>
+                            </svg>
+                        </a>
+                        <ul class="nav__submenu header__nav-submenu" data-depth="3">
+                            <li class="nav__submenu-item header__nav-submenu-item nav__item--has-children">
+                                <a class="nav__submenu-link header__nav-submenu-link" href="#">
+                                    Дизайн квартиры
+                                    <svg viewBox="0 0 24 24" width="24" height="24">
+                                        <use href="img/icons/sprite.svg#angle-down"></use>
+                                    </svg>
+                                </a>
+                                <ul class="nav__submenu header__nav-submenu">
+                                    <li class="nav__submenu-item header__nav-submenu-item">
+                                        <a class="nav__submenu-link header__nav-submenu-link" href="#">
+                                            Квартиры студии
+                                        </a>
+                                    </li>
+                                    <li class="nav__submenu-item header__nav-submenu-item">
+                                        <a class="nav__submenu-link header__nav-submenu-link" href="#">
+                                            Однокомнатные квартиры
+                                        </a>
+                                    </li>
+                                    <li class="nav__submenu-item header__nav-submenu-item">
+                                        <a class="nav__submenu-link header__nav-submenu-link" href="#">
+                                            Двухкомнатные квартиры
+                                        </a>
+                                    </li>
+                                    <li class="nav__submenu-item header__nav-submenu-item">
+                                        <a class="nav__submenu-link header__nav-submenu-link" href="#">
+                                            Трехкомнатные квартиры
+                                        </a>
+                                    </li>
+                                    <li class="nav__submenu-item header__nav-submenu-item">
+                                        <a class="nav__submenu-link header__nav-submenu-link" href="#">
+                                            Четырехкомнатные квартиры
+                                        </a>
+                                    </li>
+                                    <li class="nav__submenu-item header__nav-submenu-item">
+                                        <a class="nav__submenu-link header__nav-submenu-link" href="#">
+                                            Апартаменты
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav__submenu-item header__nav-submenu-item">
+                                <a class="nav__submenu-link header__nav-submenu-link" href="#">
+                                    Дома и коттеджи
+                                </a>
+                            </li>
+                            <li class="nav__submenu-item header__nav-submenu-item">
+                                <a class="nav__submenu-link header__nav-submenu-link" href="#">
+                                    Дополнительные услуги
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__item header__nav-item">
+                        <a class="nav__link header__nav-link" href="#">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+                <ul class="social header__social show-md">
+                    <li class="social__item header__social-item">
+                        <a class="social__link header__social-link" href="#" target="_blank" rel="noopener noreferrer">
+                            WhatsApp
+                            <svg viewBox="0 0 15 15" width="15" height="15">
+                                <use href="img/icons/sprite.svg#whatsapp"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item header__social-item">
+                        <a class="social__link header__social-link" href="#" target="_blank" rel="noopener noreferrer">
+                            Telegram
+                            <svg viewBox="0 0 15 15" width="15" height="15">
+                                <use href="img/icons/sprite.svg#telegram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item header__social-item">
+                        <a class="social__link header__social-link" href="#" target="_blank" rel="noopener noreferrer">
+                            Instagram
+                            <svg viewBox="0 0 15 15" width="15" height="15">
+                                <use href="img/icons/sprite.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+             <a class="phone header__phone" href="tel:+7 (495) 555-10-20">
+                +7 (495) 555-10-20
+             </a>
+             <button id="nav-toggle" class="btn show-md nav-toggle">
+                <div class="nav-toggle__content">
+                    <span class="nav-toggle__item"></span>
+                    <span class="nav-toggle__item"></span>
+                    <span class="nav-toggle__item"></span>
+                </div>
+             </button>
+        </div>
+    </div>
+</header>
+    <main class="content" id="content">
+        <div class="page page--gap">
+            <div class="container">
+                <div class="breadcrumbs">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a href="index.html" class="breadcrumbs__link">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span class="breadcrumbs__link">
+                                Портфолио
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <section class="section projects">
+                <div class="container">
+                    <div class="section__header section__header--center">
+                        <h2 class="section__title">
+                            Проекты
+                        </h2>
+                    </div>
+                    <div class="projects__grid">
+                        <a class="project-card" href="project.html">
+                            <img src="img/project-1.jpg" alt="" class="project-card__image">
+                            <div class="project-card__info">
+                                <div class="project-card__title">
+                                    ЖК Бизнес Бутово
+                                </div>
+                                <span class="project-card__area">
+                                    60 м2
+                                </span>
+                                <div class="project-card__description">
+                                    Дизайн-студия Step Design представляет собой гармонию индивидуального подхода и модного стиля. 
+                                </div>
+                            </div>
+                        </a>
+                        <a class="project-card" href="project.html">
+                            <img src="img/project-2.jpg" alt="" class="project-card__image">
+                            <div class="project-card__info">
+                                <div class="project-card__title">
+                                    ЖК Бизнес Бутово
+                                </div>
+                                <span class="project-card__area">
+                                    60 м2
+                                </span>
+                                <div class="project-card__description">
+                                    Дизайн-студия Step Design представляет собой гармонию индивидуального подхода и модного стиля. 
+                                </div>
+                            </div>
+                        </a>
+                        <a class="project-card" href="project.html">
+                            <img src="img/project-3.jpg" alt="" class="project-card__image">
+                            <div class="project-card__info">
+                                <div class="project-card__title">
+                                    ЖК Бизнес Бутово
+                                </div>
+                                <span class="project-card__area">
+                                    60 м2
+                                </span>
+                                <div class="project-card__description">
+                                    Дизайн-студия Step Design представляет собой гармонию индивидуального подхода и модного стиля. 
+                                </div>
+                            </div>
+                        </a>
+                        <a class="project-card" href="project.html">
+                            <img src="img/project-4.jpg" alt="" class="project-card__image">
+                            <div class="project-card__info">
+                                <div class="project-card__title">
+                                    ЖК Бизнес Бутово
+                                </div>
+                                <span class="project-card__area">
+                                    60 м2
+                                </span>
+                                <div class="project-card__description">
+                                    Дизайн-студия Step Design представляет собой гармонию индивидуального подхода и модного стиля. 
+                                </div>
+                            </div>
+                        </a>
+                        <a class="project-card" href="project.html">
+                            <img src="img/project-5.jpg" alt="" class="project-card__image">
+                            <div class="project-card__info">
+                                <div class="project-card__title">
+                                    ЖК Бизнес Бутово
+                                </div>
+                                <span class="project-card__area">
+                                    60 м2
+                                </span>
+                                <div class="project-card__description">
+                                    Дизайн-студия Step Design представляет собой гармонию индивидуального подхода и модного стиля. 
+                                </div>
+                            </div>
+                        </a>
+                        <a class="project-card" href="project.html">
+                            <img src="img/project-6.jpg" alt="" class="project-card__image">
+                            <div class="project-card__info">
+                                <div class="project-card__title">
+                                    ЖК Бизнес Бутово
+                                </div>
+                                <span class="project-card__area">
+                                    60 м2
+                                </span>
+                                <div class="project-card__description">
+                                    Дизайн-студия Step Design представляет собой гармонию индивидуального подхода и модного стиля. 
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="projects__bottom">
+                        <button class="btn step-btn step-btn--brown projects__more" href="#">
+                            Показать еще
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="section section--gap-top seo">
+                <div class="container">
+                    <div class="section__header">
+                        <h2 class="section__title section__title--small">
+                            CEO текст
+                        </h2>
+                    </div>
+                    <div class="seo__content">
+                        <p>
+                            Элегантность и уют в сочетании с функциональностью — концепция проекта для семьи с двумя детьми.
+                        </p>
+                        <p>
+                            Для создания легкости и уюта использованы нейтральные, обволакивающие оттенки. Глубокий графитовый цвет в сочетании с шпоном и мрамором придает ощущение спокойствия и благородства.
+                        </p>
+                        <p>
+                            В кухне-гостиной предусмотрены закрытые системы хранения. Подвесная витрина для посуды добавляет пространству объема и «воздуха».
+                        </p>
+                        <p>
+                            В проекте учтены разные возрастные группы детей, и в отдельных детских комнатах создан интерьер с индивидуальным характером. Яркие акценты расставлены с помощью игрушек, декора и мебели с необычной геометрией.
+                        </p>
+                        <p>
+                            В спальне предусмотрена небольшая рабочая зона в виде стойки, совмещенной со стильным стеллажом.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer id="footer" class="footer section--gap-top">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__top">
+                <div class="logo footer__logo">
+                    <img class="logo__img footer__logo-img" src="img/logo.svg" alt="">
+                    <div class="footer__logo-title">
+                        Переосмысление пространства со вкусом
+                    </div>
+                </div>
+                <div class="footer__calculate">
+                    <div class="footer__calculate-title">
+                        Закажите обратный звонок, и&nbsp;мы&nbsp;Вам перезвоним
+                    </div>
+                    <form class="form footer__calculate-form">
+                        <input type="tel" class="form__field" placeholder="+7 (___) ___-__-__">
+                        <button class="btn step-btn step-btn--brown form__submit">
+                            Рассчитать стоимость
+                        </button>
+                    </form>
+                </div>
+                <div class="footer__contacts">
+                    <a href="tel:+7 (495) 555-10-20" class="phone footer__phone">
+                        +7 (495) 555-10-20
+                    </a>
+                    <ul class="social footer__social">
+                        <li class="social__item footer__social-item">
+                            <a class="social__link footer__social-link" href="#" target="_blank" rel="noopener noreferrer">
+                                WhatsApp
+                                <svg viewBox="0 0 15 15" width="15" height="15">
+                                    <use href="img/icons/sprite.svg#whatsapp"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item footer__social-item">
+                            <a class="social__link footer__social-link" href="#" target="_blank" rel="noopener noreferrer">
+                                Telegram
+                                <svg viewBox="0 0 15 15" width="15" height="15">
+                                    <use href="img/icons/sprite.svg#telegram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item footer__social-item">
+                            <a class="social__link footer__social-link" href="#" target="_blank" rel="noopener noreferrer">
+                                Instagram
+                                <svg viewBox="0 0 15 15" width="15" height="15">
+                                    <use href="img/icons/sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <nav class="nav footer__nav">
+                    <ul class="nav__list footer__nav-list">
+                        <li class="nav__item footer__nav-item">
+                            <a class="nav__link footer__nav-link" href="#">
+                                Проекты
+                            </a>
+                        </li>
+                        <li class="nav__item footer__nav-item">
+                            <a class="nav__link footer__nav-link" href="#">
+                                О нас
+                            </a>
+                        </li>
+                        <li class="nav__item footer__nav-item">
+                            <a class="nav__link footer__nav-link" href="#">
+                                Услуги и цены
+                            </a>
+                        </li>
+                        <li class="nav__item footer__nav-item">
+                            <a class="nav__link footer__nav-link" href="#">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer__copyright">
+                    2024. Все права защищены.
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/libs/swiper-bundle.min.js"></script>
+<script src="js/libs/fancybox.umd.js"></script>
+<script src="js/libs/imask.min.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+</html>
