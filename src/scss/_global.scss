@@ -131,6 +131,12 @@ img {
             background-color: var(--dark-gold);
         }   
     }
+    &--white {
+        color: var(--white);
+        &::before {
+            background-color: var(--white);
+        }
+    }
 }
 
 .section {
