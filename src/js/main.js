@@ -2,7 +2,7 @@
 const navToggle = document.getElementById('nav-toggle');
 const submenuToggle = document.querySelectorAll('.nav__item--has-children > a');
 
-
+modalInit();
 faqInit();
 
 document.querySelectorAll('input[type=tel]')?.forEach((input) => {
@@ -62,6 +62,60 @@ function closeSubMenus() {
   document.querySelectorAll('.nav__item--toggled').forEach((navItem) => {
     navItem.classList.remove('nav__item--toggled')
   });
+}
+
+// Modal
+function modalInit() {
+
+  const openModal = document.querySelectorAll('.open-modal');
+  const modalClose = document.querySelectorAll('.modal__close');
+
+  if( openModal ) {
+
+    openModal.forEach(function(button) {
+      button.addEventListener('click', function(e) {
+
+        e.preventDefault();
+        const modalId = button.dataset.id;
+    
+        const modal = document.getElementById(modalId);
+        if( modal ) {
+  
+          document.body.classList.add('overflow-hidden');
+          modal.classList.add('modal--active');
+  
+        }
+  
+      });
+    });
+
+    document.addEventListener('click', function(e) {
+      if(e.target.classList.contains('modal')) {
+        const modalToClose = document.querySelector('.modal--active');
+        if( modalToClose ) {
+          modalToClose.classList.remove('modal--active');
+        }
+        if( !document.querySelector('.modal--active') ) {
+          document.body.classList.remove('overflow-hidden');
+        }
+      }
+    });
+  
+  }
+  
+  if( modalClose ) {
+  
+    modalClose.forEach(function(button) {
+      button.addEventListener('click', function() {
+        this.closest('.modal').classList.remove('modal--active');
+        if( !document.querySelector('.modal--active') ) {
+          document.body.classList.remove('overflow-hidden');
+        }
+      });
+    });
+  
+  }
+
 }
 
 // Faq init

@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги и цены</title>
+    <link rel="stylesheet" href="css/libs/normalize.css">
+    <link rel="stylesheet" href="css/libs/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/libs/fancybox.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <header id="header" class="header">
+    <div class="container">
+        <div class="header__inner">
+            <a class="logo header__logo" href="index.html">
+                <img class="logo__img header__logo-img" src="img/logo.svg" alt="">
+            </a>
+            <nav class="nav header__nav">
+                <ul class="nav__list header__nav-list">
+                    <li class="nav__item header__nav-item">
+                        <a class="nav__link header__nav-link" href="index.html">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="nav__item header__nav-item">
+                        <a class="nav__link header__nav-link" href="projects.html">
+                            Проекты
+                        </a>
+                    </li>
+                    <li class="nav__item header__nav-item">
+                        <a class="nav__link header__nav-link" href="about.html">
+                            О нас
+                        </a>
+                    </li>
+                    <li class="nav__item header__nav-item nav__item--has-children">
+                        <a class="nav__link header__nav-link" href="#">
+                            Услуги и цены
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <use href="img/icons/sprite.svg#angle-down"></use>
+                            </svg>
+                        </a>
+                        <ul class="nav__submenu header__nav-submenu" data-depth="3">
+                            <li class="nav__submenu-item header__nav-submenu-item nav__item--has-children">
+                                <a class="nav__submenu-link header__nav-submenu-link" href="#">
+                                    Дизайн квартиры
+                                    <svg viewBox="0 0 24 24" width="24" height="24">
+                                        <use href="img/icons/sprite.svg#angle-down"></use>
+                                    </svg>
+                                </a>
+                                <ul class="nav__submenu header__nav-submenu">
+                                    <li class="nav__submenu-item header__nav-submenu-item">
+                                        <a class="nav__submenu-link header__nav-submenu-link" href="#">
+                                            Квартиры студии
+                                        </a>
+                                    </li>
+                                    <li class="nav__submenu-item header__nav-submenu-item">
+                                        <a class="nav__submenu-link header__nav-submenu-link" href="#">
+                                            Однокомнатные квартиры
+                                        </a>
+                                    </li>
+                                    <li class="nav__submenu-item header__nav-submenu-item">
+                                        <a class="nav__submenu-link header__nav-submenu-link" href="#">
+                                            Двухкомнатные квартиры
+                                        </a>
+                                    </li>
+                                    <li class="nav__submenu-item header__nav-submenu-item">
+                                        <a class="nav__submenu-link header__nav-submenu-link" href="#">
+                                            Трехкомнатные квартиры
+                                        </a>
+                                    </li>
+                                    <li class="nav__submenu-item header__nav-submenu-item">
+                                        <a class="nav__submenu-link header__nav-submenu-link" href="#">
+                                            Четырехкомнатные квартиры
+                                        </a>
+                                    </li>
+                                    <li class="nav__submenu-item header__nav-submenu-item">
+                                        <a class="nav__submenu-link header__nav-submenu-link" href="#">
+                                            Апартаменты
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav__submenu-item header__nav-submenu-item">
+                                <a class="nav__submenu-link header__nav-submenu-link" href="#">
+                                    Дома и коттеджи
+                                </a>
+                            </li>
+                            <li class="nav__submenu-item header__nav-submenu-item">
+                                <a class="nav__submenu-link header__nav-submenu-link" href="#">
+                                    Дополнительные услуги
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__item header__nav-item">
+                        <a class="nav__link header__nav-link" href="contacts.html">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+                <ul class="social header__social show-md">
+                    <li class="social__item header__social-item">
+                        <a class="social__link header__social-link" href="#" target="_blank" rel="noopener noreferrer">
+                            WhatsApp
+                            <svg viewBox="0 0 15 15" width="15" height="15">
+                                <use href="img/icons/sprite.svg#whatsapp"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item header__social-item">
+                        <a class="social__link header__social-link" href="#" target="_blank" rel="noopener noreferrer">
+                            Telegram
+                            <svg viewBox="0 0 15 15" width="15" height="15">
+                                <use href="img/icons/sprite.svg#telegram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item header__social-item">
+                        <a class="social__link header__social-link" href="#" target="_blank" rel="noopener noreferrer">
+                            Instagram
+                            <svg viewBox="0 0 15 15" width="15" height="15">
+                                <use href="img/icons/sprite.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+             <a class="phone header__phone" href="tel:+7 (495) 555-10-20">
+                +7 (495) 555-10-20
+             </a>
+             <button id="nav-toggle" class="btn show-md nav-toggle">
+                <div class="nav-toggle__content">
+                    <span class="nav-toggle__item"></span>
+                    <span class="nav-toggle__item"></span>
+                    <span class="nav-toggle__item"></span>
+                </div>
+             </button>
+        </div>
+    </div>
+</header>
+    <main class="content" id="content">
+        <div class="page pt-30">
+            <div class="container">
+                <div class="breadcrumbs">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a href="index.html" class="breadcrumbs__link">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span class="breadcrumbs__link">
+                                Услуги и цены
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <section class="section services">
+                <div class="container">
+                    <div class="section__header section__header--center">
+                        <h1 class="section__title section__title--short">
+                            Наши услуги
+                        </h1>
+                    </div>
+                    <ul class="services__list">
+                        <li class="services__item">
+                            <div class="services__item-content">
+                                <div class="services__item-header">
+                                    <span class="services__item-title">
+                                        Планировка
+                                    </span>
+                                    <span class="services__item-description">
+                                        Для тех, кто хочет контролировать ремонт самостоятельно:
+                                    </span>
+                                </div>
+                                <div class="services__item-body">
+                                    <ul>
+                                        <li>обмеры помещения</li>
+                                        <li>консультация дизайнера</li>
+                                        <li>планировочное решение</li>
+                                        <li>«белая» визуализация</li>
+                                        <li>базовый рабочий проект</li>
+                                    </ul>
+                                </div>
+                                <div class="services__item-price">
+                                    от <span>4 000</span> /кв.м.
+                                </div>
+                            </div>
+                            <button class="btn services__item-more step-btn step-btn--brown">
+                                Узнать подробнее
+                            </button>
+                        </li>
+                        <li class="services__item" style="background-color: #533412; color: #fff;">
+                            <div class="services__item-content">
+                                <div class="services__item-header">
+                                    <span class="services__item-title">
+                                        Комлпектация
+                                    </span>
+                                    <span class="services__item-description">
+                                        Концепция и&nbsp;комплектация объекта мебелью и&nbsp;материалами:
+                                    </span>
+                                </div>
+                                <div class="services__item-body">
+                                    <ul>
+                                        <li>планировочное решение</li>
+                                        <li>«белая» визуализация</li>
+                                        <li>дизайн-концепция</li>
+                                        <li>3D-коллажи</li>
+                                        <li>чертежи для подрядчиков</li>
+                                        <li>авторский надзор</li>
+                                        <li>комплектация объекта</li>
+                                    </ul>
+                                    <p>
+                                        *для объектов с готовой отделкой
+                                    </p>
+                                </div>
+                                <div class="services__item-price">
+                                    от <span>50 000</span> руб.
+                                </div>
+                            </div>
+                            <button class="btn services__item-more step-btn step-btn--gold">
+                                Узнать подробнее
+                            </button>
+                        </li>
+                        <li class="services__item">
+                            <div class="services__item-content">
+                                <div class="services__item-header">
+                                    <span class="services__item-title">
+                                        Дизайн-проект
+                                    </span>
+                                    <span class="services__item-description">
+                                        Все работы берем на себя:
+                                    </span>
+                                </div>
+                                <div class="services__item-body">
+                                    <ul>
+                                        <li>планировочное решение</li>
+                                        <li>«белая» визуализация</li>
+                                        <li>дизайн-концепция</li>
+                                        <li>ЗD-визуализация + 360°</li>
+                                        <li>полный рабочий проект</li>
+                                        <li>авторский надзор</li>
+                                        <li>комплектация объекта</li>
+                                        <li>управление стройкой</li>
+                                        <li>финальное декорирование</li>
+                                        <li>сопровождение на всех этапах</li>
+                                    </ul>
+                                </div>
+                                <div class="services__item-price">
+                                    от <span>4 000</span> /кв.м.
+                                </div>
+                            </div>
+                            <button class="btn services__item-more step-btn step-btn--brown">
+                                Узнать подробнее
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section pt-120 faq">
+                <div class="container">
+                    <div class="section__header">
+                        <div class="line">
+                            Частые вопросы
+                        </div>
+                        <h2 class="section__title">
+                            Узнайте больше
+                        </h2>
+                    </div>
+                    <div class="faq__items">
+                        <ul class="faq__list">
+                            <li class="faq-item faq__item">
+                                <button class="btn faq-item__toggle">
+                                    Зачем нужен авторский надзор?
+                                    <svg viewBox="0 0 24 24" width="24" height="24">
+                                        <use href="img/icons/sprite.svg#angle-down"></use>
+                                    </svg>
+                                </button>
+                                <div class="faq-item__content">
+                                    <p>
+                                        Авторский надзор необходим, если вы хотите, чтобы ремонт был сделан качественно и грамотно; чтобы конечный результат на 100% соответствовал дизайн-проекту; вы находитесь вне объекта и вам необходим тот, кто будет контролировать все процессы ремонта, строительства и отделки.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="faq-item faq__item">
+                                <button class="btn faq-item__toggle">
+                                    Для чего нужна комплектация объекта?
+                                    <svg viewBox="0 0 24 24" width="24" height="24">
+                                        <use href="img/icons/sprite.svg#angle-down"></use>
+                                    </svg>
+                                </button>
+                                <div class="faq-item__content">
+                                    <p>
+                                        Авторский надзор необходим, если вы хотите, чтобы ремонт был сделан качественно и грамотно; чтобы конечный результат на 100% соответствовал дизайн-проекту; вы находитесь вне объекта и вам необходим тот, кто будет контролировать все процессы ремонта, строительства и отделки.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="faq-item faq__item">
+                                <button class="btn faq-item__toggle">
+                                    Учитываете&nbsp;ли вы&nbsp;финансовые возможности заказчика?
+                                    <svg viewBox="0 0 24 24" width="24" height="24">
+                                        <use href="img/icons/sprite.svg#angle-down"></use>
+                                    </svg>
+                                </button>
+                                <div class="faq-item__content">
+                                    <p>
+                                        Авторский надзор необходим, если вы хотите, чтобы ремонт был сделан качественно и грамотно; чтобы конечный результат на 100% соответствовал дизайн-проекту; вы находитесь вне объекта и вам необходим тот, кто будет контролировать все процессы ремонта, строительства и отделки.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="faq-item faq__item">
+                                <button class="btn faq-item__toggle">
+                                    Есть&nbsp;ли у&nbsp;вас проверенные строительные бригады, которым можно доверять? И&nbsp;работаете&nbsp;ли вы&nbsp;с&nbsp;бригадой заказчика?
+                                    <svg viewBox="0 0 24 24" width="24" height="24">
+                                        <use href="img/icons/sprite.svg#angle-down"></use>
+                                    </svg>
+                                </button>
+                                <div class="faq-item__content">
+                                    <p>
+                                        Авторский надзор необходим, если вы хотите, чтобы ремонт был сделан качественно и грамотно; чтобы конечный результат на 100% соответствовал дизайн-проекту; вы находитесь вне объекта и вам необходим тот, кто будет контролировать все процессы ремонта, строительства и отделки.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="faq-item faq__item">
+                                <button class="btn faq-item__toggle">
+                                    Можно&nbsp;ли начать ремонт параллельно с&nbsp;разработкой дизайн-проекта?
+                                    <svg viewBox="0 0 24 24" width="24" height="24">
+                                        <use href="img/icons/sprite.svg#angle-down"></use>
+                                    </svg>
+                                </button>
+                                <div class="faq-item__content">
+                                    <p>
+                                        Авторский надзор необходим, если вы хотите, чтобы ремонт был сделан качественно и грамотно; чтобы конечный результат на 100% соответствовал дизайн-проекту; вы находитесь вне объекта и вам необходим тот, кто будет контролировать все процессы ремонта, строительства и отделки.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="faq-item faq__item">
+                                <button class="btn faq-item__toggle">
+                                    Если еще не&nbsp;получили ключи от&nbsp;квартиры, можно&nbsp;ли начать работу над проектом?
+                                    <svg viewBox="0 0 24 24" width="24" height="24">
+                                        <use href="img/icons/sprite.svg#angle-down"></use>
+                                    </svg>
+                                </button>
+                                <div class="faq-item__content">
+                                    <p>
+                                        Авторский надзор необходим, если вы хотите, чтобы ремонт был сделан качественно и грамотно; чтобы конечный результат на 100% соответствовал дизайн-проекту; вы находитесь вне объекта и вам необходим тот, кто будет контролировать все процессы ремонта, строительства и отделки.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="faq__list">
+                            <li class="faq-item faq__item">
+                                <button class="btn faq-item__toggle">
+                                    В&nbsp;каких стилях вы&nbsp;работаете?
+                                    <svg viewBox="0 0 24 24" width="24" height="24">
+                                        <use href="img/icons/sprite.svg#angle-down"></use>
+                                    </svg>
+                                </button>
+                                <div class="faq-item__content">
+                                    <p>
+                                        Авторский надзор необходим, если вы хотите, чтобы ремонт был сделан качественно и грамотно; чтобы конечный результат на 100% соответствовал дизайн-проекту; вы находитесь вне объекта и вам необходим тот, кто будет контролировать все процессы ремонта, строительства и отделки.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="faq-item faq__item">
+                                <button class="btn faq-item__toggle">
+                                    Сколько вариантов планировок вы&nbsp;делаете?
+                                    <svg viewBox="0 0 24 24" width="24" height="24">
+                                        <use href="img/icons/sprite.svg#angle-down"></use>
+                                    </svg>
+                                </button>
+                                <div class="faq-item__content">
+                                    <p>
+                                        Авторский надзор необходим, если вы хотите, чтобы ремонт был сделан качественно и грамотно; чтобы конечный результат на 100% соответствовал дизайн-проекту; вы находитесь вне объекта и вам необходим тот, кто будет контролировать все процессы ремонта, строительства и отделки.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="faq-item faq__item">
+                                <button class="btn faq-item__toggle">
+                                    Успеете&nbsp;ли вы&nbsp;создать полный проект за&nbsp;1&nbsp;месяц?
+                                    <svg viewBox="0 0 24 24" width="24" height="24">
+                                        <use href="img/icons/sprite.svg#angle-down"></use>
+                                    </svg>
+                                </button>
+                                <div class="faq-item__content">
+                                    <p>
+                                        Авторский надзор необходим, если вы хотите, чтобы ремонт был сделан качественно и грамотно; чтобы конечный результат на 100% соответствовал дизайн-проекту; вы находитесь вне объекта и вам необходим тот, кто будет контролировать все процессы ремонта, строительства и отделки.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="faq-item faq__item">
+                                <button class="btn faq-item__toggle">
+                                    Входят&nbsp;ли в&nbsp;состав рабочей документации инженерные проекты?
+                                    <svg viewBox="0 0 24 24" width="24" height="24">
+                                        <use href="img/icons/sprite.svg#angle-down"></use>
+                                    </svg>
+                                </button>
+                                <div class="faq-item__content">
+                                    <p>
+                                        Авторский надзор необходим, если вы хотите, чтобы ремонт был сделан качественно и грамотно; чтобы конечный результат на 100% соответствовал дизайн-проекту; вы находитесь вне объекта и вам необходим тот, кто будет контролировать все процессы ремонта, строительства и отделки.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="faq-item faq__item">
+                                <button class="btn faq-item__toggle">
+                                    Оказываете&nbsp;ли вы&nbsp;услуги дистанционно? И&nbsp;если&nbsp;да, то&nbsp;как в&nbsp;таком случае обеспечивается авторский надзор?
+                                    <svg viewBox="0 0 24 24" width="24" height="24">
+                                        <use href="img/icons/sprite.svg#angle-down"></use>
+                                    </svg>
+                                </button>
+                                <div class="faq-item__content">
+                                    <p>
+                                        Авторский надзор необходим, если вы хотите, чтобы ремонт был сделан качественно и грамотно; чтобы конечный результат на 100% соответствовал дизайн-проекту; вы находитесь вне объекта и вам необходим тот, кто будет контролировать все процессы ремонта, строительства и отделки.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="faq-item faq__item">
+                                <button class="btn faq-item__toggle">
+                                    Нужен дизайн только одной комнаты, вы&nbsp;оказываете такую услугу?
+                                    <svg viewBox="0 0 24 24" width="24" height="24">
+                                        <use href="img/icons/sprite.svg#angle-down"></use>
+                                    </svg>
+                                </button>
+                                <div class="faq-item__content">
+                                    <p>
+                                        Авторский надзор необходим, если вы хотите, чтобы ремонт был сделан качественно и грамотно; чтобы конечный результат на 100% соответствовал дизайн-проекту; вы находитесь вне объекта и вам необходим тот, кто будет контролировать все процессы ремонта, строительства и отделки.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer id="footer" class="footer pt-120">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__top">
+                <div class="logo footer__logo">
+                    <img class="logo__img footer__logo-img" src="img/logo.svg" alt="">
+                    <div class="footer__logo-title">
+                        Переосмысление пространства со вкусом
+                    </div>
+                </div>
+                <div class="footer__calculate">
+                    <div class="footer__calculate-title">
+                        Закажите обратный звонок, и&nbsp;мы&nbsp;Вам перезвоним
+                    </div>
+                    <form class="form footer__calculate-form">
+                        <input type="tel" class="form__field" placeholder="+7 (___) ___-__-__">
+                        <button class="btn step-btn step-btn--brown form__submit">
+                            Рассчитать стоимость
+                        </button>
+                    </form>
+                </div>
+                <div class="footer__contacts">
+                    <a href="tel:+7 (495) 555-10-20" class="phone footer__phone">
+                        +7 (495) 555-10-20
+                    </a>
+                    <ul class="social footer__social">
+                        <li class="social__item footer__social-item">
+                            <a class="social__link footer__social-link" href="#" target="_blank" rel="noopener noreferrer">
+                                WhatsApp
+                                <svg viewBox="0 0 15 15" width="15" height="15">
+                                    <use href="img/icons/sprite.svg#whatsapp"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item footer__social-item">
+                            <a class="social__link footer__social-link" href="#" target="_blank" rel="noopener noreferrer">
+                                Telegram
+                                <svg viewBox="0 0 15 15" width="15" height="15">
+                                    <use href="img/icons/sprite.svg#telegram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item footer__social-item">
+                            <a class="social__link footer__social-link" href="#" target="_blank" rel="noopener noreferrer">
+                                Instagram
+                                <svg viewBox="0 0 15 15" width="15" height="15">
+                                    <use href="img/icons/sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <nav class="nav footer__nav">
+                    <ul class="nav__list footer__nav-list">
+                        <li class="nav__item footer__nav-item">
+                            <a class="nav__link footer__nav-link" href="#">
+                                Проекты
+                            </a>
+                        </li>
+                        <li class="nav__item footer__nav-item">
+                            <a class="nav__link footer__nav-link" href="#">
+                                О нас
+                            </a>
+                        </li>
+                        <li class="nav__item footer__nav-item">
+                            <a class="nav__link footer__nav-link" href="#">
+                                Услуги и цены
+                            </a>
+                        </li>
+                        <li class="nav__item footer__nav-item">
+                            <a class="nav__link footer__nav-link" href="#">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer__copyright">
+                    2024. Все права защищены.
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/libs/swiper-bundle.min.js"></script>
+<script src="js/libs/fancybox.umd.js"></script>
+<script src="js/libs/imask.min.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+</html>

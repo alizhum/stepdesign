@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дизайн квартиры-студии</title>
+    <link rel="stylesheet" href="css/libs/normalize.css">
+    <link rel="stylesheet" href="css/libs/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/libs/fancybox.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <header id="header" class="header">
+    <div class="container">
+        <div class="header__inner">
+            <a class="logo header__logo" href="index.html">
+                <img class="logo__img header__logo-img" src="img/logo.svg" alt="">
+            </a>
+            <nav class="nav header__nav">
+                <ul class="nav__list header__nav-list">
+                    <li class="nav__item header__nav-item">
+                        <a class="nav__link header__nav-link" href="index.html">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="nav__item header__nav-item">
+                        <a class="nav__link header__nav-link" href="projects.html">
+                            Проекты
+                        </a>
+                    </li>
+                    <li class="nav__item header__nav-item">
+                        <a class="nav__link header__nav-link" href="about.html">
+                            О нас
+                        </a>
+                    </li>
+                    <li class="nav__item header__nav-item nav__item--has-children">
+                        <a class="nav__link header__nav-link" href="#">
+                            Услуги и цены
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <use href="img/icons/sprite.svg#angle-down"></use>
+                            </svg>
+                        </a>
+                        <ul class="nav__submenu header__nav-submenu" data-depth="3">
+                            <li class="nav__submenu-item header__nav-submenu-item nav__item--has-children">
+                                <a class="nav__submenu-link header__nav-submenu-link" href="#">
+                                    Дизайн квартиры
+                                    <svg viewBox="0 0 24 24" width="24" height="24">
+                                        <use href="img/icons/sprite.svg#angle-down"></use>
+                                    </svg>
+                                </a>
+                                <ul class="nav__submenu header__nav-submenu">
+                                    <li class="nav__submenu-item header__nav-submenu-item">
+                                        <a class="nav__submenu-link header__nav-submenu-link" href="#">
+                                            Квартиры студии
+                                        </a>
+                                    </li>
+                                    <li class="nav__submenu-item header__nav-submenu-item">
+                                        <a class="nav__submenu-link header__nav-submenu-link" href="#">
+                                            Однокомнатные квартиры
+                                        </a>
+                                    </li>
+                                    <li class="nav__submenu-item header__nav-submenu-item">
+                                        <a class="nav__submenu-link header__nav-submenu-link" href="#">
+                                            Двухкомнатные квартиры
+                                        </a>
+                                    </li>
+                                    <li class="nav__submenu-item header__nav-submenu-item">
+                                        <a class="nav__submenu-link header__nav-submenu-link" href="#">
+                                            Трехкомнатные квартиры
+                                        </a>
+                                    </li>
+                                    <li class="nav__submenu-item header__nav-submenu-item">
+                                        <a class="nav__submenu-link header__nav-submenu-link" href="#">
+                                            Четырехкомнатные квартиры
+                                        </a>
+                                    </li>
+                                    <li class="nav__submenu-item header__nav-submenu-item">
+                                        <a class="nav__submenu-link header__nav-submenu-link" href="#">
+                                            Апартаменты
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav__submenu-item header__nav-submenu-item">
+                                <a class="nav__submenu-link header__nav-submenu-link" href="#">
+                                    Дома и коттеджи
+                                </a>
+                            </li>
+                            <li class="nav__submenu-item header__nav-submenu-item">
+                                <a class="nav__submenu-link header__nav-submenu-link" href="#">
+                                    Дополнительные услуги
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__item header__nav-item">
+                        <a class="nav__link header__nav-link" href="contacts.html">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+                <ul class="social header__social show-md">
+                    <li class="social__item header__social-item">
+                        <a class="social__link header__social-link" href="#" target="_blank" rel="noopener noreferrer">
+                            WhatsApp
+                            <svg viewBox="0 0 15 15" width="15" height="15">
+                                <use href="img/icons/sprite.svg#whatsapp"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item header__social-item">
+                        <a class="social__link header__social-link" href="#" target="_blank" rel="noopener noreferrer">
+                            Telegram
+                            <svg viewBox="0 0 15 15" width="15" height="15">
+                                <use href="img/icons/sprite.svg#telegram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item header__social-item">
+                        <a class="social__link header__social-link" href="#" target="_blank" rel="noopener noreferrer">
+                            Instagram
+                            <svg viewBox="0 0 15 15" width="15" height="15">
+                                <use href="img/icons/sprite.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+             <a class="phone header__phone" href="tel:+7 (495) 555-10-20">
+                +7 (495) 555-10-20
+             </a>
+             <button id="nav-toggle" class="btn show-md nav-toggle">
+                <div class="nav-toggle__content">
+                    <span class="nav-toggle__item"></span>
+                    <span class="nav-toggle__item"></span>
+                    <span class="nav-toggle__item"></span>
+                </div>
+             </button>
+        </div>
+    </div>
+</header>
+    <main class="content" id="content">
+        <div class="page pt-30">
+            <div class="container">
+                <div class="breadcrumbs">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a href="index.html" class="breadcrumbs__link">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a href="case.html" class="breadcrumbs__link">
+                                Дизайн квартиры
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span class="breadcrumbs__link">
+                                Дизайн квартиры-студии
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <section class="section">
+                <div class="container">
+                    <div class="section__header section__header--center">
+                        <h1 class="section__title section__title--short">
+                            Дизайн квартиры-студии
+                        </h1>
+                        <div class="page__description">
+                            <p>
+                                Студии, как сегмент, выделяются тем, что представляют собой отличный вариант доступного жилья, подходящего в основном для одного человека, когда нет необходимости в большой квартире. Небольшая площадь студий компенсируется возможностью воплощения самых интересных дизайнерских решений.
+                            </p>
+                            <p>
+                                Свободное пространство без перегородок – это идеальная основа для реализации любых творческих идей, если их правильно воплотить. Доверяя нам разработку дизайн-проекта студии под ключ, вы получаете именно это – грамотное и продуманное воплощение всех ваших задумок.
+                            </p>
+                            <p>
+                                Наши специалисты возьмут на себя не только создание проекта, но и его реализацию – это гарантирует вам безупречный результат, соответствующий вашим ожиданиям.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section projects">
+                <div class="container">
+                    <div class="section__header section__header--md-center">
+                        <div class="line">
+                            Проекты
+                        </div>
+                        <h2 class="section__title">
+                            Позвольте Вашему дому раскрыть свою великолепность
+                        </h2>
+                    </div>
+                    <div class="projects__grid">
+                        <a class="project-card" href="#">
+                            <img src="img/project-1.jpg" alt="" class="project-card__image">
+                            <div class="project-card__info">
+                                <div class="project-card__title">
+                                    ЖК Бизнес Бутово
+                                </div>
+                                <span class="project-card__area">
+                                    60 м2
+                                </span>
+                                <div class="project-card__description">
+                                    Дизайн-студия Step Design представляет собой гармонию индивидуального подхода и модного стиля. 
+                                </div>
+                            </div>
+                        </a>
+                        <a class="project-card" href="#">
+                            <img src="img/project-2.jpg" alt="" class="project-card__image">
+                            <div class="project-card__info">
+                                <div class="project-card__title">
+                                    ЖК Бизнес Бутово
+                                </div>
+                                <span class="project-card__area">
+                                    60 м2
+                                </span>
+                                <div class="project-card__description">
+                                    Дизайн-студия Step Design представляет собой гармонию индивидуального подхода и модного стиля. 
+                                </div>
+                            </div>
+                        </a>
+                        <a class="project-card" href="#">
+                            <img src="img/project-3.jpg" alt="" class="project-card__image">
+                            <div class="project-card__info">
+                                <div class="project-card__title">
+                                    ЖК Бизнес Бутово
+                                </div>
+                                <span class="project-card__area">
+                                    60 м2
+                                </span>
+                                <div class="project-card__description">
+                                    Дизайн-студия Step Design представляет собой гармонию индивидуального подхода и модного стиля. 
+                                </div>
+                            </div>
+                        </a>
+                        <a class="project-card" href="#">
+                            <img src="img/project-4.jpg" alt="" class="project-card__image">
+                            <div class="project-card__info">
+                                <div class="project-card__title">
+                                    ЖК Бизнес Бутово
+                                </div>
+                                <span class="project-card__area">
+                                    60 м2
+                                </span>
+                                <div class="project-card__description">
+                                    Дизайн-студия Step Design представляет собой гармонию индивидуального подхода и модного стиля. 
+                                </div>
+                            </div>
+                        </a>
+                        <a class="project-card" href="#">
+                            <img src="img/project-5.jpg" alt="" class="project-card__image">
+                            <div class="project-card__info">
+                                <div class="project-card__title">
+                                    ЖК Бизнес Бутово
+                                </div>
+                                <span class="project-card__area">
+                                    60 м2
+                                </span>
+                                <div class="project-card__description">
+                                    Дизайн-студия Step Design представляет собой гармонию индивидуального подхода и модного стиля. 
+                                </div>
+                            </div>
+                        </a>
+                        <a class="project-card" href="#">
+                            <img src="img/project-6.jpg" alt="" class="project-card__image">
+                            <div class="project-card__info">
+                                <div class="project-card__title">
+                                    ЖК Бизнес Бутово
+                                </div>
+                                <span class="project-card__area">
+                                    60 м2
+                                </span>
+                                <div class="project-card__description">
+                                    Дизайн-студия Step Design представляет собой гармонию индивидуального подхода и модного стиля. 
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="projects__bottom">
+                        <a class="step-btn step-btn--brown projects__more" href="#">
+                            Смотреть все проекты
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="section pt-80 infoblock">
+                <div class="container">
+                    <div class="section__header">
+                        <h2 class="section__title section__title--small">
+                            Наши тарифы
+                        </h2>
+                    </div>
+                    <div class="infoblock__content">
+                        <p>
+                            Дизайн-проект интерьера квартиры с качественной 3D-визуализацией решает следующие задачи:
+                        </p>
+                        <p>
+                            <strong>Позволяет на начальных этапах понять, каким будет результат.</strong> Если в процессе разработки становится понятно, что некоторые ранее выбранные решения не совсем уместны и удачны именно здесь, от них можно безболезненно отказаться. Это намного проще, быстрее и дешевле, чем менять уже готовый интерьер.
+                        </p>
+                        <p>
+                            <strong>Помогает сразу получить наглядные референсы, которые будут использоваться для общения с исполнителями и продавцами на всех уровнях.</strong> Это очень упрощает все процессы, так как люди сразу видят, что Вы от них хотите – и это сводит к нулю все разногласия и недопонимания. Когда есть готовая картинка, к которой нужно прийти, все промежуточные этапы значительно упрощаются и требуют меньше ресурсов.
+                        </p>
+                        <p>
+                            <strong>Служит мощным источником вдохновения.</strong> На пути к созданию идеального дома встречаются трудные этапы, когда процесс кажется бесконечным и утомительным, а до желаемого результата еще так далеко. В такие моменты достаточно просто взглянуть на то, какой будет Ваша квартира – и это вселяет силы, помогает воодушевиться и настроиться на продуктивное сотрудничество с дизайнерами.
+                        </p>
+                    </div>
+                    <div class="services pt-60">
+                        <ul class="services__list">
+                            <li class="services__item">
+                                <div class="services__item-content">
+                                    <div class="services__item-header">
+                                        <span class="services__item-title">
+                                            Планировка
+                                        </span>
+                                        <span class="services__item-description">
+                                            Для тех, кто хочет контролировать ремонт самостоятельно:
+                                        </span>
+                                    </div>
+                                    <div class="services__item-body">
+                                        <ul>
+                                            <li>обмеры помещения</li>
+                                            <li>консультация дизайнера</li>
+                                            <li>планировочное решение</li>
+                                            <li>«белая» визуализация</li>
+                                            <li>базовый рабочий проект</li>
+                                        </ul>
+                                    </div>
+                                    <div class="services__item-price">
+                                        от <span>4 000</span> /кв.м.
+                                    </div>
+                                </div>
+                                <button class="btn services__item-more step-btn step-btn--brown">
+                                    Узнать подробнее
+                                </button>
+                            </li>
+                            <li class="services__item" style="background-color: #533412; color: #fff;">
+                                <div class="services__item-content">
+                                    <div class="services__item-header">
+                                        <span class="services__item-title">
+                                            Комлпектация
+                                        </span>
+                                        <span class="services__item-description">
+                                            Концепция и&nbsp;комплектация объекта мебелью и&nbsp;материалами:
+                                        </span>
+                                    </div>
+                                    <div class="services__item-body">
+                                        <ul>
+                                            <li>планировочное решение</li>
+                                            <li>«белая» визуализация</li>
+                                            <li>дизайн-концепция</li>
+                                            <li>3D-коллажи</li>
+                                            <li>чертежи для подрядчиков</li>
+                                            <li>авторский надзор</li>
+                                            <li>комплектация объекта</li>
+                                        </ul>
+                                        <p>
+                                            *для объектов с готовой отделкой
+                                        </p>
+                                    </div>
+                                    <div class="services__item-price">
+                                        от <span>50 000</span> руб.
+                                    </div>
+                                </div>
+                                <button class="btn services__item-more step-btn step-btn--gold">
+                                    Узнать подробнее
+                                </button>
+                            </li>
+                            <li class="services__item">
+                                <div class="services__item-content">
+                                    <div class="services__item-header">
+                                        <span class="services__item-title">
+                                            Дизайн-проект
+                                        </span>
+                                        <span class="services__item-description">
+                                            Все работы берем на себя:
+                                        </span>
+                                    </div>
+                                    <div class="services__item-body">
+                                        <ul>
+                                            <li>планировочное решение</li>
+                                            <li>«белая» визуализация</li>
+                                            <li>дизайн-концепция</li>
+                                            <li>ЗD-визуализация + 360°</li>
+                                            <li>полный рабочий проект</li>
+                                            <li>авторский надзор</li>
+                                            <li>комплектация объекта</li>
+                                            <li>управление стройкой</li>
+                                            <li>финальное декорирование</li>
+                                            <li>сопровождение на всех этапах</li>
+                                        </ul>
+                                    </div>
+                                    <div class="services__item-price">
+                                        от <span>4 000</span> /кв.м.
+                                    </div>
+                                </div>
+                                <button class="btn services__item-more step-btn step-btn--brown">
+                                    Узнать подробнее
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="section pt-80 steps">
+                <div class="container">
+                    <div class="section__header">
+                        <h2 class="section__title section__title--small">
+                            Этапы работ
+                        </h2>
+                    </div>
+                    <div class="steps__items">
+                        <div class="steps__item">
+                            <span class="steps__item-number line">
+                                1 этап
+                            </span>
+                            <div class="steps__item-title">
+                                Подготовка
+                            </div>
+                            <div class="steps__item-description">
+                                <p>
+                                    Проведём замеры и сделаем фотофиксацию объекта. Встретимся для обсуждения и составим подробное техническое задание. Обсудим наполнение каждого помещения.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="steps__item">
+                            <span class="steps__item-number line">
+                                2 этап
+                            </span>
+                            <div class="steps__item-title">
+                                Планировочное решение
+                            </div>
+                            <div class="steps__item-description">
+                                <p>
+                                    Вы получите 3 варианта планировки с расстановкой мебели и зонированием пространства. Также создадим "белую" визуализацию, в которой не учитываются конкретные модели мебели и текстуры материалов.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="steps__item">
+                            <span class="steps__item-number line">
+                                3 этап
+                            </span>
+                            <div class="steps__item-title">
+                                3D-визуализация
+                            </div>
+                            <div class="steps__item-description">
+                                <p>
+                                    Вы получите фотореалистичные изображения с объемно-пространственным изображением. Сможете внести правки, добавить элементы, о которых мечтаете. На этом этапе допускаются любые эксперименты, и утверждается окончательный вариант.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="steps__item">
+                            <span class="steps__item-number line">
+                                4 этап
+                            </span>
+                            <div class="steps__item-title">
+                                Рабочая документация и&nbsp;смета
+                            </div>
+                            <div class="steps__item-description">
+                                <p>
+                                    Чертежи для архитекторов и строителей. Таблица с полным перечнем мебели, материалов и комплектующих. Составление сметы с ценами.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="steps__item">
+                            <span class="steps__item-number line">
+                                5 этап
+                            </span>
+                            <div class="steps__item-title">
+                                Ремонт по&nbsp;дизайн-проекту
+                            </div>
+                            <div class="steps__item-description">
+                                <p>
+                                    Предлагаем свою проверенную строительную бригаду - у нас строгий отбор, который проходит не более 10% потенциальных исполнителей.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="steps__item">
+                            <span class="steps__item-number line">
+                                6 этап
+                            </span>
+                            <div class="steps__item-title">
+                                Авторский надзор и&nbsp;комплектация
+                            </div>
+                            <div class="steps__item-description">
+                                <p>
+                                    Контролируем ход работ на объекте в соответствии с дизайн-проектом. Проведём закупку мебели и чистовых материалов, проверяя строгое соответствие согласованной спецификации.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section pt-60 infoblock">
+                <div class="container">
+                    <div class="section__header">
+                        <h2 class="section__title section__title--small">
+                            Еще текст для СЕО
+                        </h2>
+                    </div>
+                    <div class="infoblock__content">
+                        <p>
+                            Вы сами выбираете набор услуг, необходимых для реализации проекта, исходя из ваших требований и бюджета. Мы предложим оптимальный пакет, который можно будет расширить или сократить.
+                        </p>
+                        <p>
+                            Все тарифы фиксированы и указаны на нашем сайте, что позволяет вам предварительно оценить стоимость работ. Основным параметром, влияющим на цену дизайна, является площадь квартиры-студии. Полученная стоимость будет базовой и может изменяться в процессе обсуждения предстоящих работ.
+                        </p>
+                        <p>
+                            Мы гарантируем, что финальная цена, утвержденная после всех согласований, будет окончательной и фиксированной. Никаких дополнительных платежей не потребуется, любые изменения объема работ будут отражены в договоре, что надежно защищает вас от любых финансовых расхождений.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer id="footer" class="footer pt-120">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__top">
+                <div class="logo footer__logo">
+                    <img class="logo__img footer__logo-img" src="img/logo.svg" alt="">
+                    <div class="footer__logo-title">
+                        Переосмысление пространства со вкусом
+                    </div>
+                </div>
+                <div class="footer__calculate">
+                    <div class="footer__calculate-title">
+                        Закажите обратный звонок, и&nbsp;мы&nbsp;Вам перезвоним
+                    </div>
+                    <form class="form footer__calculate-form">
+                        <input type="tel" class="form__field" placeholder="+7 (___) ___-__-__">
+                        <button class="btn step-btn step-btn--brown form__submit">
+                            Рассчитать стоимость
+                        </button>
+                    </form>
+                </div>
+                <div class="footer__contacts">
+                    <a href="tel:+7 (495) 555-10-20" class="phone footer__phone">
+                        +7 (495) 555-10-20
+                    </a>
+                    <ul class="social footer__social">
+                        <li class="social__item footer__social-item">
+                            <a class="social__link footer__social-link" href="#" target="_blank" rel="noopener noreferrer">
+                                WhatsApp
+                                <svg viewBox="0 0 15 15" width="15" height="15">
+                                    <use href="img/icons/sprite.svg#whatsapp"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item footer__social-item">
+                            <a class="social__link footer__social-link" href="#" target="_blank" rel="noopener noreferrer">
+                                Telegram
+                                <svg viewBox="0 0 15 15" width="15" height="15">
+                                    <use href="img/icons/sprite.svg#telegram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item footer__social-item">
+                            <a class="social__link footer__social-link" href="#" target="_blank" rel="noopener noreferrer">
+                                Instagram
+                                <svg viewBox="0 0 15 15" width="15" height="15">
+                                    <use href="img/icons/sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <nav class="nav footer__nav">
+                    <ul class="nav__list footer__nav-list">
+                        <li class="nav__item footer__nav-item">
+                            <a class="nav__link footer__nav-link" href="#">
+                                Проекты
+                            </a>
+                        </li>
+                        <li class="nav__item footer__nav-item">
+                            <a class="nav__link footer__nav-link" href="#">
+                                О нас
+                            </a>
+                        </li>
+                        <li class="nav__item footer__nav-item">
+                            <a class="nav__link footer__nav-link" href="#">
+                                Услуги и цены
+                            </a>
+                        </li>
+                        <li class="nav__item footer__nav-item">
+                            <a class="nav__link footer__nav-link" href="#">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer__copyright">
+                    2024. Все права защищены.
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/libs/swiper-bundle.min.js"></script>
+<script src="js/libs/fancybox.umd.js"></script>
+<script src="js/libs/imask.min.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+</html>

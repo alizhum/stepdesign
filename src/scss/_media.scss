@@ -17,6 +17,16 @@
             position: static;
         }
     }
+    .services {
+        &__list {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        &__item {
+            &-description {
+                min-height: unset;
+            }
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -24,6 +34,12 @@
     body {
         &.overflow-hidden {
             overflow: hidden;
+        }
+    }
+
+    .page {
+        &__description {
+            line-height: 150%;
         }
     }
     
@@ -96,6 +112,11 @@
         &__inner {
             grid-template-columns: 1fr;
         }
+        &--reverse {
+            .info__images {
+                order: 1;
+            }
+        }
     }
 
     .stages {
@@ -129,15 +150,41 @@
 
     .about {
         &__hero {
-            &-description {
-                line-height: 150%;
-            }
             &-features {
                 display: grid;
                 grid-template-columns: repeat(1, 1fr);
             }
         }
     }
+
+    .infoblock {
+        &__content {
+            line-height: 150%;
+        }
+    }
+
+    .contacts {
+        overflow: hidden;
+        &__content {
+            grid-template-columns: 1fr;
+        }
+        &__item {
+            line-height: 133%;
+        }
+        &__form-title {
+            line-height: 133%;
+        }
+        &__feedback-container {
+            padding-left: 0;
+        }
+        &__square {
+            left: -18px;
+            &:nth-child(2) {
+                left: -10px;
+            }
+        }
+    }
+    
 
     .footer {
         &__top {
@@ -205,6 +252,11 @@
     .project {
         &__meta-list {
             grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    .steps {
+        &__items {
+            grid-template-columns: 1fr;
         }
     }
 }
